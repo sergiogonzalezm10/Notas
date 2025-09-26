@@ -5,11 +5,11 @@ import java.util.Scanner;
 public class Notas {
 
 	public static void main(String[] args) {
-		double expediente;
-		double primero;
-		double segundo;
-		double tercero;
-		double boletin;
+		double expediente;			//Variable double para almacenar la nota del expediente
+		double primero;				//Variable double para almacenar la nota del primer trimestre	
+		double segundo;				//Variable double para almacenar la nota del segundo trimestre	
+		double tercero;				//Variable double para almacenar la nota del tercer trimestre	
+		double boletin;				//Variable double para almacenar la nota del boletín	
 		
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Nota primer trimestre: ");
@@ -19,8 +19,8 @@ public class Notas {
 		System.out.println("Nota tercer trimestre: ");
 		tercero = sc.nextDouble();
 		
-		expediente = (primero + segundo + tercero) / 3;
-		boletin = (int) expediente;
+		expediente = (primero + segundo + tercero) / 3;		//Operación para calcular la nota media de los tres trimestres y almacenarla en la variable expediente
+		boletin = (int) expediente;							//La nota del boletin es la misma que la del expediente pero sin decimales, para ello utilizamos int entre paréntesis
 		System.out.println("Nota media: " + (int) boletin);
 		System.out.println("Nota media: " + expediente);
 	}
